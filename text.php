@@ -13,15 +13,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
 </head>
 <body>
-    <h2>Il tuo testo:</h2>
-    <p> <?php echo $text ?></p>
-    <p>Lunghezza: <?php echo $text_length1 ?></p>
+    <div class="container">
+        <div class="row">
+            <div class="section">
+                <div class="col-70">
+                    <h2>Il tuo testo:</h2>
+                    <p class="text"> <?php echo $text ?></p>
+                </div>
+                <div class="col-30">
+                    <p><strong>Lunghezza:</strong> <?php echo $text_length1 ?></p>
+                </div>
+            </div>
 
-    <h2>Il tuo testo censurato:</h2>
-    <p> <?php echo $text2 ?></p>
-    <p>Lunghezza: <?php echo $text_length2 ?></p>
+            <div class="section">
+                <div class="col-70">
+                    <h2>Il tuo testo censurato:</h2>
+                    <p class="text"> <?php echo $text2 ?></p>
+                </div>
+                <div class="col-30">
+                    <p><strong>Lunghezza:</strong> <?php echo $text_length2 ?></p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
